@@ -11,7 +11,7 @@
     </head>
     <body>
         <div class="wrap">
-            <div class="left">
+            <div class="left border-end">
                 <ul>
                     <li class="logo" id="instance-logo">Logo</li>
                 </ul>
@@ -32,7 +32,7 @@
                     タイムライン
                 </div>
             </div>
-            <div class="right">
+            <div class="right border-start">
                 <form id="search" method="post">
                     <input type="text" name="q" class="form-control" placeholder="検索"><button type="submit" class="btn btn-outline-success">Search</button>
                 </form>
@@ -46,5 +46,6 @@
                 </div>
             </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     </body>
 </html>

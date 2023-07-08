@@ -1,2 +1,3 @@
 .vscode/sftp.json
 .user.ini
+core/config/vars.php

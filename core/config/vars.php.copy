@@ -1,0 +1,13 @@
+<?php
+//データベースホスト名
+$DATABASE_HOST = "";
+
+//データベース名
+$DATABASE_NAME = "";
+
+//接続者名
+$DATABASE_USER = "";
+
+//パスワード
+$DATABASE_PASS = "";
+?>
