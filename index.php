@@ -46,6 +46,29 @@
                 </div>
             </div>
         </div>
+        <div class="modal" tabindex="-1" id="modal" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        <p>Body Area</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="modalDisaccept">キャンセル</button>
+                        <button type="button" class="btn btn-primary" id="modalAccept">Positive</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="/core/resource/script/main.js?<?=time();?>"></script>
+        <script>
+            //モーダル
+            const modal = document.getElementById('modal');
+            const modalCtl = new bootstrap.Modal(modal)
+        </script>
     </body>
 </html>
