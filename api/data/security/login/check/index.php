@@ -7,7 +7,7 @@ if(empty($_COOKIE['tokens']) || empty($_COOKIE["instance"])){
 }
 $expire = time() + 60 * 60 * 24 * 365;
 if(empty($_COOKIE['user'])){
-    setcookie("user","1",$expire,"/");
+    setcookie("user","0",$expire,"/");
     $user = 0;
 }else{
     $user = intval($_COOKIE['user']);

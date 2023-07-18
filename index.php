@@ -29,7 +29,33 @@
                     </select>
                 </div>
                 <div class="timeline" id="timeline">
-                    タイムライン
+                <div class="tl-item">
+                        <div class="icon"></div>
+                        <div class="right">
+                            <div class="name-space">
+                                <div><b>篤脩</b></div>
+                                <div>@802KsaRATgSUa@m.tkngh.jp</div>
+                                <div>1900/01/01・00:00:02</div>
+                            </div>
+                            <div class="note-space">
+                                二つ目の投稿です。↓の投稿には下線は尽きませんが、それ以外には下線がつき、ノートの区切りを表します。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tl-item">
+                        <div class="icon"></div>
+                        <div class="right">
+                            <div class="name-space">
+                                <div><b>篤脩</b></div>
+                                <div>@802KsaRATgSUa@m.tkngh.jp</div>
+                                <div>1900/01/01・00:00:01</div>
+                            </div>
+                            <div class="note-space">
+                                これは投稿のテストです。実際にActivityPubから取ったものではありません。HTMLに直書きをしてテストをしています。MFM対応は未定です。
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
             <div class="right border-start">

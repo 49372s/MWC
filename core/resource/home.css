@@ -23,3 +23,38 @@
 .wrap .right #search{
     display: flex;
 }
+
+.timeline .tl-item{
+    display: flex;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+.timeline .tl-item:nth-last-child(1){
+    border: none;
+}
+
+.timeline .tl-item .icon{
+    width: 58px;
+    height: 58px;
+}
+
+.timeline .tl-item .right{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 58px);
+}
+
+.timeline .tl-item .right .name-space{
+    display: grid;
+    grid-template-columns: max-content 1fr 1fr;
+}
+
+.timeline .tl-item .right .name-space div{
+    display: inline-block;
+}
+.timeline .tl-item .right .name-space div b{
+    display: inline-block;
+}
+
+.timeline .tl-item .right .name-space div:nth-child(2){
+    color: gray;
+}

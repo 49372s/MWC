@@ -61,4 +61,11 @@ function APIRequest($instance,$dir,$data,$mode = 0){
     return $res;
     curl_close($ch);
 }
+
+function returnUserinfo($user){
+    $user = intval($user);
+    $userToken = explode(";",$_COOKIE['tokens'])[$user];
+    $instances = explode(";",$_COOKIE["instance"])[$user];
+    return array("token"=>$userToken,"instance"=>$instances);
+}
 ?>
