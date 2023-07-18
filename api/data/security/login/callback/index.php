@@ -3,7 +3,7 @@ include('../../../../../core/config/func.php');
 if(empty($_GET['session']) || empty($_COOKIE['instances'])){
     APIResponse(false,"Error code: 100");
 }
-$ar = json_decode(APIRequest($_COOKIE['instance'],"miauth/".$_GET['session']."/check",json_encode(array())));
+$ar = json_decode(APIRequest($_COOKIE['instances'],"miauth/".$_GET['session']."/check",json_encode(array())));
 
 if(empty($_COOKIE['tokens']) || empty($_COOKIE['instance'])){
     $nt = "";
