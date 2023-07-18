@@ -28,10 +28,10 @@ function APIRequest($instance,$dir,$data,$mode = 0){
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
     if($mode==0){
         //post
-    $header = [
-        'Content-Type: application/json',
-        'Accept-Charset: UTF-8',
-    ];
+        $header = [
+            'Content-Type: application/json',
+            'Accept-Charset: UTF-8',
+        ];
         curl_setopt($ch,CURLOPT_POST,true);
         curl_setopt($ch,CURLOPT_POSTFIELDS,$data);
         curl_setopt($ch,CURLOPT_HTTPHEADER,$header);
@@ -46,10 +46,10 @@ function APIRequest($instance,$dir,$data,$mode = 0){
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
         if($mode==0){
             //post
-        $header = [
-            'Content-Type: application/json',
-            'Accept-Charset: UTF-8',
-        ];
+            $header = [
+                'Content-Type: application/json',
+                'Accept-Charset: UTF-8',
+            ];
             curl_setopt($ch,CURLOPT_POST,true);
             curl_setopt($ch,CURLOPT_POSTFIELDS,$data);
             curl_setopt($ch,CURLOPT_HTTPHEADER,$header);
